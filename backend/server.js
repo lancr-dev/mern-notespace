@@ -24,7 +24,7 @@ app.use(rateLimiter);
 
 app.use((req, res, next) => {
   console.log(
-    `New request - Request method: ${req.method} | Request URL: ${req.url}`,
+    `New Request - Request Method: ${req.method} | Request URL: ${req.url}`,
   );
   next();
 });
